@@ -22,7 +22,7 @@ Welcome to the Fitness Website repository! This project aims to create a website
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/fitness-website.git
+   git clone [https://github.com/sanjana332001/Fitness-Website.git]
 
 cd fitness-website
 npm install
