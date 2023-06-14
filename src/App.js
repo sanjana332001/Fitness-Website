@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Navbar from "./componds.js/navbar";
+import Products from "./componds.js/products";
+
+import { Route, Routes } from "react-router-dom";
+import Welcome from "./componds.js/welcome";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Welcome />}></Route>;
+      </Routes>
+    </>
   );
 }
 
